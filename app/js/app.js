@@ -1,7 +1,7 @@
 (function() {
   var app = angular.module('dictatorTinder', []);
 
-  app.controller('dictatorCtrl', ['$http', function($http) {
+  app.controller('dictatorProfileCtrl', ['$http', function($http) {
     var self = this;
     self.dictators = [];
 
