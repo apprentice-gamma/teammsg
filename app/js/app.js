@@ -4,8 +4,6 @@
   app.controller('dictatorProfileCtrl', ['$http', function($http) {
     var self = this;
     self.dictators = [];
-    
-    self.randomBio = self.getBio(self.bios);
     self.bios = 
     [
 	"I enjoy long walks on the beach, playing the zither, and oppressing the common people. Message me if you want to get together and plot a coup, if you know what I mean.",
@@ -29,13 +27,7 @@
 	"I'm not a dictator. It's just that I have a grumpy face.",
 	"Conquering the world is easy, finding love is hard.",
 	"War is peace. Freedom is slavery. Ignorance is strength."];
-
-	self.getBio = function(bios){
-		var selection = bios[Math.floor(Math.random() * bios.length)];
-		return selection;
-	};
-
-
+	 self.randomBio = self.bios[Math.floor(Math.random() * self.bios.length)];
     $http.get('demo-data.json').success(function(data) {
       self.dictators = data;
     });
