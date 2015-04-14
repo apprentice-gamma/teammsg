@@ -1,8 +1,16 @@
-.shortbio{
-	margin-right: auto;
-	margin-left:  auto;
+.topbio{
+  padding-bottom: 30px;
 }
 
-body{
-	background: black;
+
+.shortbio{
+
+}
+
+.rover{
+	color: red;
+}
+
+.smalluserpic{
+
 }
