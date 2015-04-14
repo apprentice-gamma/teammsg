@@ -1,0 +1,213 @@
+[	
+	{
+		"_id": "00983iojlaisjo09039",
+		"Dictator Name": "Captain Ahab",
+		"Owned Households": [
+				{
+          "_id": "09309380923kfjsndk0",
+				  "Street Address": "Ap #745-1275 Quis, Street", 
+				  "Residents": [
+					  {
+              "_id": "oijeoiu90840983093",
+					    "first name": "Tasha", 
+					    "last name": "Glass", 
+					    "alias": "Benicar HCT", 
+					    "espionage loyalty": "Austria", 
+					    "age": 60, 
+					    "gender": "female", 
+					    "email": "pede@Integer.edu"
+            },
+					  {
+              "_id": "09382093uokjeflkjlsd",
+					    "first name": "Ciaran", 
+					    "last name": "Castro", 
+					    "alias": "Folic Acid", 
+					    "espionage loyalty": "Cyprus", 
+					    "age": 44, 
+					    "gender": "M", 
+					    "email": "feugiat.tellus.lorem@augue.edu"
+            },
+					], 
+				  "City": "Lowell", 
+				  "Zip Code": "33369", 
+				  "States": "MA", 
+				  "Favorite Pizza": "Supreme", 
+				  "Number of Bathrooms": "", 
+				  "Party House": "true", 
+				  "Household Income": "$69566.95"
+        },
+			 	{
+          "_id": "09i3092i03jlijoiod",
+			 	  "Street Address": "195 At Rd.", 
+			 	  "Residents": [
+				 	  {
+              "_id": "092092092092oaisoa",
+				 	    "first name": "Sydney", 
+				 	    "last name": "Hines", 
+				 	    "alias": "Crestor", 
+				 	    "espionage loyalty": "Liberia", 
+				 	    "age": 71, 
+				 	    "gender": "male", 
+				 	    "email": "vulputate.mauris@pellentesque.ca"
+            },
+					  {
+              "_id": "092092i0oidqjoiw092",
+					    "first name": "Warren", 
+					    "last name": "Woodard", 
+					    "alias": "Triamterene/Hydrochlorothiazide", 
+					    "espionage loyalty": "Chile", 
+					    "age": 15, 
+					    "gender": "male", 
+					    "email": "libero.lacus.varius@sodales.com"
+            },
+					], 
+				  "City": "Kailua", 
+				  "Zip Code": "32971", 
+				  "States": "HI", 
+				  "Favorite Pizza": "Pepperoni", 
+				  "Number of Bathrooms": "5", 
+				  "Party House": "false", 
+				  "Household Income": "$117593.67"
+        },
+				],
+			  "Facial Hair": "full beard",
+			  "At War": true
+		  },
+		  {
+		    "_id": "093i0923u09jwe0909",
+		    "Dictator Name": "Marie Antoinette",
+		    "Owned Households": [
+          {
+            "_id": "092092i092ioos",
+            "Street Address": "622-948 Semper Av.",
+            "Residents": [
+              {
+                "_id": "0920920920dowi",
+                "first name": "Brielle",
+                "last name": "Fischer",
+                "alias": "Lorazepam",
+                "espionage loyalty": "Mexico",
+                "age": 68,
+                "gender": "M",
+                "email": "pharetra.sed@nulla.ca"
+              },
+		          {
+                "_id": "0902909209i20jdjd",
+                "first name": "Gloria",
+                "last name": "Lancaster",
+                "alias": "Levoxyl",
+                "espionage loyalty": "American Samoa",
+                "age": 44,
+                "gender": "male",
+                "email": "sit.amet.faucibus@Aliquam.edu"
+              },
+		          {
+                "_id": "09209209i029i0d9d",
+                "first name": "Kasper",
+                "last name": "Burt",
+                "alias": "Alendronate Sodium",
+                "espionage loyalty": "Philippines",
+                "age": 41,
+                "gender": "Male",
+                "email": "iaculis@ultricesposuere.co.uk"
+              }
+            ], 
+          "City": "Cambridge",
+          "Zip Code": "55382",
+          "States": "MA",
+          "Favorite Pizza": "Supreme",
+          "Number of Bathrooms": "2",
+          "Party House": "false",
+          "Household Income": "$50911.34"
+        }, 
+		    {
+          "_id":"oijeoie989839839893",
+          "Street Address": "P.O. Box 141, 5056 Ipsum Av.",
+          "Residents": [
+            {
+              "_id": "982982982oiduod",
+              "first name": "Abraham",
+              "last name": "Cantrell",
+              "alias": "Tri-Sprintec", 
+              "espionage loyalty": "Papua New Guinea", 
+              "age": 19, 
+              "gender": "female", 
+              "email": "amet.nulla.Donec@Cras.co.uk"
+            },
+		        {
+              "_id": "0930930d0d0oijdoi", 
+              "first name": "Lavinia", 
+              "last name": "Haley", 
+              "alias": "Gabapentin", 
+              "espionage loyalty": "Hong Kong", 
+              "age": 21, 
+              "gender": "Male", 
+              "email": "tempus@Nullamvitaediam.edu"
+            },
+		        {
+               "_id": "0930934089j4012093oajosijos2", 
+              "first name": "Laith", 
+              "last name": "Matthews", 
+              "alias": "Tramadol HCl", 
+              "espionage loyalty": "Botswana", 
+              "age": 7, 
+              "gender": "M", 
+              "email": "nec.leo.Morbi@nonenim.edu"
+            }
+          ], 
+          "City": "Richmond",
+          "Zip Code": "54294",
+          "States": "VA",
+          "Favorite Pizza": "Vegetarian",
+          "Number of Bathrooms": "4",
+          "Party House": "false",
+          "Household Income": "$67682.82"
+        }, 
+		    {
+          "_id": "09209309409foijodo0",
+          "Street Address": "808-117 Ante St.",
+          "Residents": [
+            {
+              "_id": "09209209209ud09u0dd",
+              "first name": "Ramona",
+              "last name": "William",
+              "alias": "Amlodipine Besylate",
+              "espionage loyalty": "Finland",
+              "age": 74,
+              "gender": "F",
+              "email": "aliquet@nunc.net"
+            },
+		        {
+              "_id": "09309309309u0d9d09",
+              "first name": "Karen",
+              "last name": "Hammond",
+              "alias": "Fluconazole",
+              "espionage loyalty": "Armenia",
+              "age": 50,
+              "gender": "male",
+              "email": "odio@nullavulputate.edu"
+            },
+		        {
+              "_id": "093093010102122oiososs",
+              "first name": "Serena",
+              "last name": "Martin",
+              "alias": "Diovan",
+              "espionage loyalty": "Taiwan",
+              "age": 70,
+              "gender": "m",
+              "email": "amet.risus@malesuada.net"
+            }
+          ],
+          "City": "Sacramento",
+          "Zip Code": "94830",
+          "States": "CA",
+          "Favorite Pizza": "Vegetarian",
+          "Number of Bathrooms": "2",
+          "Party House": "true",
+          "Household Income": "$909672.80"
+        }
+      ], 
+		  "Facial Hair": "none", 
+		  "At War": false
+		}
+  ]
