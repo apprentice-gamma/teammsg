@@ -24,6 +24,22 @@
 
 "I'm watching you.",
 
+"Death is the solution to all problems. No man – no problem.",
+
+"I want to see if you can run faster than a bullet ;)",
+
+"Looking for a special friend to vacation in Libya with...",
+
+"I don't care if you respect me as long as you fear me.",
+
+"Let us have a dagger between our teeth, a bomb in our hands, and love in our hearts.",
+
+"With struggle, you and I can liberate ourselves... ;)",
+
+"I'm not a dictator. It's just that I have a grumpy face.",
+
+"Conquering the world is easy, finding love is hard.",
+
 "War is peace. Freedom is slavery. Ignorance is strength."
 
 ]
