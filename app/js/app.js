@@ -1,17 +1,25 @@
 (function() {
-  var app = angular.module('dictatorTinder', []);
+  var app = angular.module('dictatorTinder', ["ngRoute"]);
 
-  app.config(['$routesProvider', function($routesProvider) {
-    when('/', {
-      templateUrl: '',
-      controller: 'dictatorListCtrl'
+  app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+    when('/dictators', {
+      templateUrl: 'partials/dictator-list.html'
+      // controller: 'dictatorListCtrl'
     }).
     when('/:dictatorId', {
-      templateUrl: '',
-      controller: 'dictatorProfileCtrl'
+      templateUrl: 'partials/dictator-profile.html'
+      // controller: 'dictatorProfileCtrl'
     }).
     otherwise({
       redirectTo: '/'
+    });
+  }]);
+
+
+  app.controller('dictatorListCtrl', ['$http', function($http) {
+    $http.get('demo-data.json').success(function(data) {
+      self.dictators = data;
     });
   }]);
 
