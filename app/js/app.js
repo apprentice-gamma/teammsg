@@ -18,6 +18,9 @@
 
 
   app.controller('dictatorListCtrl', ['$http', function($http) {
+    var self = this;
+    self.dictators = [];
+
     $http.get('demo-data.json').success(function(data) {
       self.dictators = data;
     });
