@@ -8,4 +8,4 @@
 		    self.dictators = [];
 		    self.dictators = DictatorService.query();
 		}
-});
+})();
