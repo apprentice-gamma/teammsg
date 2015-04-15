@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('dictatorTinder', ["ngRoute"]);
+  var app = angular.module('dictatorTinder', ['ngRoute', 'ngResource']);
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
@@ -11,14 +11,14 @@
       });
   }]);
 
+  app.factory('DictatorService', ['$resource', function($resource) {
+    return $resource('demo-data.json');
+  }]);
 
-  app.controller('dictatorListCtrl', ['$http', function($http) {
+  app.controller('dictatorListCtrl', ['DictatorService', function(DictatorService) {
     var self = this;
     self.dictators = [];
-
-    $http.get('demo-data.json').success(function(data) {
-      self.dictators = data;
-    });
+    self.dictators = DictatorService.query();
   }]);
 
   app.controller('dictatorProfileCtrl', ['$http', '$routeParams', function($http, $routeParams) {
