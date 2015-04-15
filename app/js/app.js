@@ -15,11 +15,7 @@
     return $resource('demo-data.json');
   }]);
 
-  app.controller('dictatorListCtrl', ['DictatorService', function(DictatorService) {
-    var self = this;
-    self.dictators = [];
-    self.dictators = DictatorService.query();
-  }]);
+  
 
   app.controller('dictatorProfileCtrl', ['$http', '$routeParams', function($http, $routeParams) {
     var self = this;
