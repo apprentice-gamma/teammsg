@@ -3,17 +3,12 @@
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-    when('/dictators', {
-      templateUrl: 'partials/dictator-list.html'
-      // controller: 'dictatorListCtrl'
-    }).
-    when('/:dictatorId', {
-      templateUrl: 'partials/dictator-profile.html'
-      // controller: 'dictatorProfileCtrl'
-    }).
-    otherwise({
-      redirectTo: '/'
-    });
+      when('/', {
+        templateUrl: 'partials/dictator-list.html'
+      }).
+      when('/:dictatorId', {
+        templateUrl: 'partials/dictator-profile.html'
+      });
   }]);
 
 
@@ -26,9 +21,9 @@
     });
   }]);
 
-  app.controller('dictatorProfileCtrl', ['$http', function($http) {
+  app.controller('dictatorProfileCtrl', ['$http', '$routeParams', function($http, $routeParams) {
     var self = this;
-    self.dictators = [];
+
     self.bios = [
     	"I enjoy long walks on the beach, playing the zither, and oppressing the common people. Message me if you want to get together and plot a coup, if you know what I mean.",
     	"Not looking for hookups, so don't ask. I am, however, looking for a left-hand man/woman to help me plan world domination.  And take care of my cats.",
@@ -54,9 +49,5 @@
     ];
 	  
     self.randomBio = self.bios[Math.floor(Math.random() * self.bios.length)];
-    
-    $http.get('demo-data.json').success(function(data) {
-      self.dictators = data;
-    });
   }]);
 })();
