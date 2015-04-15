@@ -27,6 +27,19 @@
         <div class="panel-heading" contenteditable="false">These will be the houses</div>
         <div class="panel-body">
         <div class="row">
+          <accordion close-others="false" class="col-md-4" ng-repeat="dictator in listCtrl.dictators">
+            <accordion-group  class="panel-primary" is-open="household.open">
+              <accordion-heading>
+                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
+                <span class='glyphicon glyphicon-bookmark'>&nbsp;</span><span>{{dictator['Owned Households'][0]["Street Address"] }}</span>
+              </accordion-heading>
+              <p>{{dictator['Owned Households'][0]["City"] }}, {{dictator['Owned Households'][0]["States"] }} </p>
+              <div class="accordian-footer">
+                <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
+                <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span> </button> -->
+              </div>
+            </accordion-group>
+          </accordion>
         <div class="col-md-4" ng-repeat="dictator in listCtrl.dictators">
           <div class="thumbnail">
             <div class="caption">
@@ -40,17 +53,4 @@
 
 
 
-<accordion close-others="false">
-    <accordion-group ng-repeat="dictator in listCtrl.dictators" class="panel-primary" is-open="household.open">
-      <accordion-heading>
-            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
-            <span class='glyphicon glyphicon-bookmark'>&nbsp;</span><span>{{dictator['Owned Households'][0]["Street Address"] }}</span>
-        </accordion-heading>
-    <p>{{dictator['Owned Households'][0]["City"] }}, {{dictator['Owned Households'][0]["States"] }} </p>
-    <div class="accordian-footer">
-      <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
-      <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span>
-      </button> -->
-    </div>
-  </accordion-group>
-</accordion>
+
