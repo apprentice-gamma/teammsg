@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('dictatorTinder', ['ngRoute', 'ngResource']);
+  var app = angular.module('dictatorTinder', ['ngRoute', 'ngResource', 'dictatorTinder.controllers']);
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
