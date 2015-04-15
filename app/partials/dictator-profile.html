@@ -1,3 +1,5 @@
+<div ng-controller="dictatorListCtrl as listCtrl">
+
 <div class="container target topbio">
     <div class="row">
         <div class="col-md-3 col-centered">
@@ -10,7 +12,7 @@
                 <div class="panel-heading">Short Bio:</div>
                 <div class="panel-body" ng-controller="dictatorProfileCtrl as profile">
                     <br />
-                    Facial hair: (insert facialhair here)
+                    Facial hair: {{dictator}}
                     <br />    
                     At war with your heart: (insert warStatus here)  
                     <br />About me: {{ profile.randomBio }}</div>
@@ -25,15 +27,30 @@
         <div class="panel-heading" contenteditable="false">These will be the houses</div>
         <div class="panel-body">
         <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" ng-repeat="dictator in listCtrl.dictators">
           <div class="thumbnail">
-            <img alt="300x200" src="http://lorempixel.com/600/200/people">
             <div class="caption">
-              <h3 class="rover">Rover</h3>
+              <h3>{{dictator['Owned Households'][0]["Street Address"] }}</h3>
               <p>Cocker Spaniel who loves treats.</p>
             </div>
           </div>
         </div>
     </div>
-    {{ profile.dictators }}
 </div>
+
+
+
+<accordion close-others="false">
+    <accordion-group ng-repeat="dictator in listCtrl.dictators" class="panel-primary" is-open="household.open">
+      <accordion-heading>
+            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
+            <span class='glyphicon glyphicon-bookmark'>&nbsp;</span><span>{{dictator['Owned Households'][0]["Street Address"] }}</span>
+        </accordion-heading>
+    <p>{{dictator['Owned Households'][0]["City"] }}, {{dictator['Owned Households'][0]["States"] }} </p>
+    <div class="accordian-footer">
+      <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
+      <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span>
+      </button> -->
+    </div>
+  </accordion-group>
+</accordion>
