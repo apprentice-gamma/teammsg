@@ -1,4 +1,5 @@
-angular.module('dictatorTinder.controllers')
+angular
+	.module('dictatorTinder')
 	.controller('dictatorListCtrl', ['DictatorService', function(DictatorService) {
 	    var self = this;
 	    self.dictators = [];

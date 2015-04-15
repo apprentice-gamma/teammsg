@@ -1,4 +1,5 @@
-angular.module('dictatorTinder.controllers')
+angular
+    .module('dictatorTinder')
     .controller('dictatorProfileCtrl', ['$http', '$routeParams', function($http, $routeParams) {
         var self = this;
 
