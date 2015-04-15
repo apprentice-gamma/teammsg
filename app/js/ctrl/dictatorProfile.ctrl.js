@@ -1,5 +1,5 @@
-(function(){}
-    
+(function(){
+
     angular
         .module('dictatorTinder')
         .controller('dictatorProfileCtrl', DictatorProfileCtrl);
@@ -33,4 +33,5 @@
             ];
         	  
             self.randomBio = self.bios[Math.floor(Math.random() * self.bios.length)];
+        }
 })();
