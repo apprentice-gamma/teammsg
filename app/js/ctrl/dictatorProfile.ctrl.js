@@ -1,4 +1,5 @@
 (function(){}
+    
     angular
         .module('dictatorTinder')
         .controller('dictatorProfileCtrl', DictatorProfileCtrl);
