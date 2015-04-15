@@ -1,4 +1,7 @@
 <div ng-controller="dictatorListCtrl as listCtrl">
-  {{ listCtrl.dictators }}
-  <h1>HELLO!!!</h1>
+  <ul>
+    <li ng-repeat="dictator in listCtrl.dictators">
+      <a href="#/{{dictator['_id']}}">{{ dictator["Dictator Name"] }}</a>
+    </li>
+  </ul>
 </div>
