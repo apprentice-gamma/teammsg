@@ -10,8 +10,6 @@
   dictatorControllers.controller('dictatorProfileCtrl', ['DictatorService', '$routeParams', function(DictatorService, $routeParams) {
     var self = this;
 
-    console.log($routeParams.dictatorId);
-
     self.dictator = DictatorService.get({id: $routeParams.dictatorId});
 
     self.bios = [
