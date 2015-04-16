@@ -15,7 +15,7 @@
 
   dictatorControllers.controller('modalCtrl', ['$scope', function($scope) {
     var self = this;
-    self.modalShown = false;
+    self.modalShown = true;
     self.toggleModal = function() {
       self.modalShown = !self.modalShown;
     };
