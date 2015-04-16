@@ -11,9 +11,12 @@
   	return function(input) {
   		return $filter('number')(input+5);
   	};
+  });
 
-
-  	
+  dictatorFilters.filter('name', function(){
+  	return function(input) {
+  		return $filter('number')(input+5);
+  	};
   });
 
 })();
