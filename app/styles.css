@@ -43,3 +43,11 @@ a:hover{
 	text-decoration: none;
 }
 
+.dictatorname{
+	text-align: center;
+}
+
+.smalluserpic>img{
+	margin-left: auto;
+	margin-right: auto
+}
