@@ -1,9 +1,9 @@
 .topbio{
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .shortbio {
-  padding-top: 30px;
+  padding-top: 9%;
 }
 
 div.accordion .panel-default>.panel-heading {
@@ -30,7 +30,8 @@ accordion-heading{
 }
 
 .logo{
-
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
