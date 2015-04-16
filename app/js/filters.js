@@ -15,7 +15,11 @@
 
   dictatorFilters.filter('name', function(){
   	return function(input) {
-  		return $filter('number')(input+5);
+  		if (input.charAt(0).parseInt().isNaN()){
+  			return input;
+  		}
+  		else
+  			return "Anonymous";
   	};
   });
 
