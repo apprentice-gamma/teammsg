@@ -6,7 +6,7 @@
   app.provider("ngModalDefaults", function() {
     return {
       options: {
-        closeButtonHtml: "<span class='ng-modal-close-x'>Sign In</span>"
+        closeButtonHtml: "<span class='ng-modal-close-x'>Sign In For Free, But Not For Freedom</span>"
       },
       $get: function() {
         return this.options;
@@ -68,7 +68,7 @@
           setupCloseButton();
           return setupStyle();
         },
-        template: "<div class='ng-modal' ng-show='show'>\n<div>\n  <div class='ng-modal-overlay' ng-click='hideModal()'></div>\n  <div class='ng-modal-dialog' ng-style='dialogStyle'>\n    <span class='ng-modal-title' ng-show='dialogTitle && dialogTitle.length' ng-bind='dialogTitle'></span>\n    <div class='ng-modal-dialog-content' ng-transclude></div>\n <button ng-bind-html='closeButtonHtml' class='ng-modal-close' ng-click='hideModal()'>Sign In</button>\n</div</div>\n</div>\n</div>"
+        template: "<div class='ng-modal' ng-show='show'>\n<div>\n  <div class='ng-modal-overlay'></div>\n  <div class='ng-modal-dialog' ng-style='dialogStyle'>\n    <span class='ng-modal-title' ng-show='dialogTitle && dialogTitle.length' ng-bind='dialogTitle'></span>\n    <div class='ng-modal-dialog-content' ng-transclude></div>\n <button ng-bind-html='closeButtonHtml' class='ng-modal-close' ng-click='hideModal()'></button>\n</div</div>\n</div>\n</div>"
       };
     }
   ]);
