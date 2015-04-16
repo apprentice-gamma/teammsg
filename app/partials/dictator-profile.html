@@ -1,9 +1,9 @@
-<div ng-controller="dictatorListCtrl as listCtrl">
+<div ng-controller="dictatorProfileCtrl as profileCtrl">
 
 <div class="container target topbio">
     <div class="row">
         <div class="col-md-3 col-centered">
-             <h1 class="">{{ dictator["Dictator Name"] }}Name Here</h1>
+             <h1 class="">{{ profileCtrl.dictator.dictator_name }}</h1>
           <div class="smalluserpic"><a href="/users"><img title="profile image" class="img-circle img-responsive" src="http://www.rlsandbox.com/img/profile.jpg"></a>
           </div><!--  put in random image here in tag-->
         </div>
@@ -12,9 +12,9 @@
                 <div class="panel-heading profileheadings">Bourgeois Bio:</div>
                 <div class="panel-body" ng-controller="dictatorProfileCtrl as profile">
                     <br />
-                    Facial hair: {{dictator}}
+                    Facial hair: {{profileCtrl.dictator.facial_hair}}
                     <br />    
-                    At war with your heart: (insert warStatus here)  
+                    At war with your heart: {{ profileCtrl.dictator.at_war }} 
                     <br />About me: {{ profile.randomBio }}</div>
             </div>
         </div>
@@ -27,13 +27,13 @@
       <div class="panel-heading profileheadings" contenteditable="false">These are the many houses under my control.</div>
       <div class="panel-body">
         <div class="row accordion">
-          <accordion close-others="false" class="col-md-4" ng-repeat="dictator in listCtrl.dictators">
+          <accordion close-others="false" class="col-md-4" ng-repeat="household in profileCtrl.dictator.owned_households">
             <accordion-group  class="panel" is-open="household.open">
               <accordion-heading class="houselisting">
                 <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
-                <span>{{dictator['Owned Households'][0]["Street Address"] }}</span>
+                <span>{{ household.street }}</span>
               </accordion-heading>
-              <p>{{dictator['Owned Households'][0]["City"] }}, {{dictator['Owned Households'][0]["States"] }} </p>
+              <p>{{ household.city }}, {{ household.state }} </p>
               <div class="accordian-footer">
                 <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
                 <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span> </button> -->
