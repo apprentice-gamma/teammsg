@@ -15,12 +15,13 @@
 
   dictatorFilters.filter('name', function(){
   	return function(input) {
-  		if (input.charAt(0).parseInt().isNaN()){
+  		var pattern = /^[A-Za-z\s]+$/
+  		var letters = pattern.test(input);
+  		if (letters){
   			return input;
   		}
   		else
-  			return "Anonymous";
+  			return "Jason";
   	};
   });
-
 })();
