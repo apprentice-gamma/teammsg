@@ -5,12 +5,17 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/ng-modal.css">
 
 </head>
 
 <body>
   <div ng-view></div>
   
+  <modal-dialog show='dialogShown' dialog-title='My Dialog' height='400px' width='75%'>
+    <p>Dialog content goes in here</p>
+  </modal-dialog>
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-resource.min.js"></script>
