@@ -7,4 +7,13 @@
   	};
   });
 
+  dictatorFilters.filter('age', function(){
+  	return function(input) {
+  		return $filter('number')(input+5);
+  	};
+
+
+  	
+  });
+
 })();
