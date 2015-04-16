@@ -2,9 +2,9 @@
 
 <div class="container navigationbar">
   <div class="row clearfix">
-    <div class="col-xs-18 col-md-12 column col-center">
-      <ul class="nav nav-pills logo">
-        <li>
+    <div class="col-xs-18 col-md-12 column">
+      <ul class="nav nav-pills">
+        <li class="logo">
           <a href="#/"><img src="img/ebourgeoisielogo.png" /></a>
         </li>
       </ul>
@@ -42,8 +42,8 @@
             <accordion-group  class="panel" is-open="household.open">
               <accordion-heading class="houselisting">
                 <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
-                <span>{{ household.street }}</span>
-              </accordion-heading>
+                <span class="colortext">{{ household.street }}</span>
+              </accordion-heading class="houselisting">
               <p>{{ household.city }}, {{ household.state }} </p>
               <div class="accordian-footer">
                 <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
@@ -67,8 +67,8 @@
             <accordion-group  class="panel" is-open="household.open">
               <accordion-heading class="houselisting">
                 <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
-                <span>{{ household.street }}</span>
-              </accordion-heading>
+                <span class="colortext">{{ household.street }}</span>
+              </accordion-heading class="houselisting">
               <p>{{ household.city }}, {{ household.state }} </p>
               <div class="accordian-footer">
                 <!--<button class="btn btn-info pull-right btn-xs" ng-click="">

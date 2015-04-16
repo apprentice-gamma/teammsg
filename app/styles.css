@@ -8,7 +8,8 @@
 
 div.accordion .panel-default>.panel-heading {
 	border-color: ;
-	background-color: grey;
+	background-color: #E6F1F7;
+	font: #567C8F;
 }
 
 accordion-heading{
@@ -29,7 +30,7 @@ accordion-heading{
 	padding-bottom: 10px;
 }
 
-.logo{
+.nav>li.logo{
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -40,7 +41,6 @@ a{
 }
 
 a:hover{
-	color: red;
 	text-decoration: none;
 }
 
@@ -51,5 +51,9 @@ a:hover{
 .smalluserpic>img{
 	margin-left: auto;
 	margin-right: auto
+}
+
+#dictatornamelisting:hover{
+	color: red;
 }
 
