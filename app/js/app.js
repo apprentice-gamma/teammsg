@@ -4,7 +4,8 @@
     'ngResource', 
     'ui.bootstrap',
     'dictatorControllers',
-    'dictatorServices'
+    'dictatorServices',
+    'ngModal'
   ]);
 
   app.config(['$routeProvider', function($routeProvider) {

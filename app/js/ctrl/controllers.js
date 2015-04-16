@@ -12,4 +12,13 @@
     self.dictator = DictatorService.get({id: $routeParams.dictatorId});
     self.randomBio = Bios[Math.floor(Math.random() * Bios.length)];
   }]);
+
+  dictatorControllers.controller('modalCtrl', ['$scope', function($scope) {
+    var self = this;
+    self.modalShown = true;
+    self.toggleModal = function() {
+      self.modalShown = !self.modalShown;
+    };
+  }]);
+
 })();
