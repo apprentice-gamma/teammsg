@@ -3,6 +3,6 @@
   
   dictatorServices.factory('DictatorService', ['$resource', 
     function ($resource) {
-      return $resource('demo-data.json');
+      return $resource('http://project2-backend.herokuapp.com/api/dictators');
   }]);
 })();
