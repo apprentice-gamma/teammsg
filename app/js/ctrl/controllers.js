@@ -1,11 +1,13 @@
 (function() {
+  var dictatorControllers = angular.module('dictatorControllers', []);
 
-  angular
-    .module('dictatorTinder')
-    .controller('dictatorProfileCtrl', DictatorProfileCtrl);
+  dictatorControllers.controller('dictatorListCtrl', ['DictatorService', function(DictatorService) {
+    var self = this;
+    self.dictators = [];
+    self.dictators = DictatorService.query();
+  }]);
 
-  function DictatorProfileCtrl($http, $routeParams) {
-
+  dictatorControllers.controller('dictatorProfileCtrl', ['$http', '$routeParams', function($http, $routeParams) {
     var self = this;
 
     self.bios = [
@@ -33,5 +35,5 @@
     ];
 
     self.randomBio = self.bios[Math.floor(Math.random() * self.bios.length)];
-  }
+  }]);
 })();
