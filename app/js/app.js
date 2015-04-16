@@ -4,7 +4,7 @@
     'ngResource', 
     'ui.bootstrap',
     'dictatorControllers',
-    'dictatorServices'
+    'dictatorServices',
     'ngModal'
   ]);
 
