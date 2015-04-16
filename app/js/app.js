@@ -5,6 +5,7 @@
     'ui.bootstrap',
     'dictatorControllers',
     'dictatorServices',
+    'dictatorFilter',
     'ngModal'
   ]);
 
