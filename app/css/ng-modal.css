@@ -33,7 +33,7 @@
  -moz-box-shadow: 4px 4px 80px #000;
  -ms-box-shadow: 4px 4px 80px #000;
  -o-box-shadow: 4px 4px 80px #000;
- padding: 10px;
+ padding: 50px;
 }
 .ng-modal-dialog-content {
  overflow: hidden;
