@@ -1,0 +1,35 @@
+.topbio{
+  padding-bottom: 30px;
+}
+
+.shortbio {
+  padding-top: 30px;
+}
+
+div.accordion .panel-default>.panel-heading {
+	border-color: ;
+	background-color: grey;
+}
+
+accordion-heading{
+	font-size: 80%;
+}
+
+.profileheadings{
+	font-size: 130%;
+	font-weight: bold;
+}
+
+.center-block{
+	text-align: center;
+
+}
+
+.navigationbar{
+	padding-bottom: 10px;
+}
+
+.logo{
+
+}
+

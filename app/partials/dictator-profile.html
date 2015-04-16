@@ -1,0 +1,105 @@
+<div ng-controller="dictatorProfileCtrl as profileCtrl">
+
+<div class="container navigationbar">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <ul class="nav nav-pills">
+        <li class="pull-left">
+          <a href="#/"><img class ="logo" src="img/ebourgeoisielogo.png" /></a>
+        </li>
+        <li class="dropdown pull-right">
+           <a href="#" data-toggle="dropdown" class="dropdown-toggle">About<strong class="caret"></strong></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">Action</a>
+            </li>
+            <li class="divider">
+            </li>
+            <li>
+              <a href="#">Separated link</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container target topbio">
+    <div class="row">
+        <div class="col-xs-6 col-md-4 col-centered">
+             <h1>{{ profileCtrl.dictator.dictator_name | name }}</h1>
+          <div class="smalluserpic col-centered"><a href="/users"><img title="profile image" class="img-circle img-responsive" src="img/{{ profileCtrl.randomNum }}.jpg"></a>
+          </div><!--  put in random image here in tag-->
+        </div>
+        <div class="col-xs-12 col-md-8 left-align shortbio" contenteditable="false" style="">
+            <div class="panel panel-info">
+                <div class="panel-heading profileheadings">Bourgeois Bio:</div>
+                <div class="panel-body" ng-controller="dictatorProfileCtrl as profile">
+                    <br />
+                    Facial hair: {{profileCtrl.dictator.facial_hair}}
+                    <br />    
+                    At war with your heart: {{ profileCtrl.dictator.at_war | checkmark}} 
+                    <br />About me: {{ profile.randomBio }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+<div class="container" contenteditable="false">
+  <div class="row">
+    <div class="panel panel-info target">
+      <div class="panel-heading profileheadings col-md-12" contenteditable="false">These are the many houses under my control.</div>
+      <div class="panel-body"><br/>
+        <div class="row accordion">
+          <accordion close-others="false" class="col-xs-6 col-md-4" ng-repeat="household in profileCtrl.dictator.owned_households">
+            <accordion-group  class="panel" is-open="household.open">
+              <accordion-heading class="houselisting">
+                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
+                <span>{{ household.street }}</span>
+              </accordion-heading>
+              <p>{{ household.city }}, {{ household.state }} </p>
+              <div class="accordian-footer">
+                <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
+                <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span> </button> -->
+              </div>
+            </accordion-group>
+          </accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" contenteditable="false">
+  <div class="row">
+    <div class="panel panel-info target">
+      <div class="panel-heading profileheadings col-md-12" contenteditable="false">These are my many proles.</div>
+      <div class="panel-body"><br/>
+        <div class="row accordion">
+            <accordion close-others="false" class="col-xs-6 col-md-4" ng-repeat="household in profileCtrl.dictator.owned_households">
+              <accordion-group  class="panel" is-open="proles.open" ng-repeat="resident in household.residents">
+                <accordion-heading class="houselisting" >
+                  <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': proles.open, 'glyphicon-chevron-right': !proles.open}"></i>
+                  <span>{{ resident.first_name + " " + resident.last_name | name }}</span>
+                </accordion-heading>
+                <p>Espionage Loyalty: {{ resident.espionage_loyalty }}</p>
+                <p>Alias: {{ resident.alias }}</p>
+                <p>Age: {{ resident.age | agefix }}</p>
+                <p>E-Mail: {{ resident.email }}</p>
+                <div class="accordian-footer">
+                  <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
+                  <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span> </button> -->
+                </div>
+              </accordion-group>
+            </accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

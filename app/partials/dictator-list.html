@@ -1,0 +1,50 @@
+<div ng-controller="dictatorListCtrl as listCtrl">
+
+<div class="container navigationbar">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul class="nav nav-pills">
+				<li>
+					<a href="#/"><img class ="logo" src="img/ebourgeoisielogo.png" /></a>
+				</li>
+				<li class="dropdown pull-right">
+					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">About<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Action</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row">
+				<div class="col-xs-6 col-md-4" ng-repeat="dictator in listCtrl.dictators">
+					<div class="thumbnail" >
+						<img alt="300x200" src="img/{{$index + 1}}.jpg" />
+						<div class="caption">
+							<h3 class= "center-block"><a href="#/{{dictator['_id']}}">{{ dictator.dictator_name | name }}</a></h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							 <button type="button" class="btn btn-danger btn-sm "><span class ="glyphicon glyphicon-thumbs-down"></span></button>
+							 <a href="#/{{dictator['_id']}}">
+							 	<button type="button" class="btn btn-success btn-sm pull-right"><span class ="glyphicon glyphicon-thumbs-up"></span></button>
+							 </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  
+</div>
