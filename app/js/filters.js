@@ -7,9 +7,10 @@
   	};
   });
 
-  dictatorFilters.filter('age', function(){
+  dictatorFilters.filter('agefix', function(){
   	return function(input) {
-  		return $filter('number')(input+5);
+  		input+=5;
+  		return Math.ceil(input);
   	};
   });
 
