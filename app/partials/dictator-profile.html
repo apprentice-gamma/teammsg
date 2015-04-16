@@ -15,7 +15,7 @@
 <div class="container target topbio">
     <div class="row">
         <div class="col-xs-18 col-md-4 col-centered dictatorname">
-             <h1>{{ profileCtrl.dictator.dictator_name }}</h1>
+             <h1>{{ profileCtrl.dictator.dictator_name | name }}</h1>
           <div class="smalluserpic col-centered"><img title="profile image" class="img-rounded img-responsive" src="img/{{ profileCtrl.randomNum }}.jpg">
 
           </div><!--  put in random image here in tag-->
@@ -47,8 +47,7 @@
               </accordion-heading class="houselisting">
               <p>{{ household.city }}, {{ household.state }} </p>
               <div class="accordian-footer">
-                <!--<button class="btn btn-info pull-right btn-xs" ng-click="">
-                <span class="glyphicon glyphicon glyphicon-comment"  tooltip="Preview Comments"  tooltip-trigger="mouseenter" tooltip-placement="top"> ()</span> </button> -->
+              
               </div>
             </accordion-group>
           </accordion>
@@ -64,17 +63,20 @@
       <div class="panel-heading profileheadings col-md-12" contenteditable="false">These are my many proles.</div>
       <div class="panel-body"><br/>
         <div class="row accordion">
-          <accordion close-others="false" class="col-xs-6 col-md-4" ng-repeat="household in profileCtrl.dictator.owned_households">
-            <accordion-group  class="panel" is-open="household.open">
-              <accordion-heading class="houselisting">
-                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
-                <span class="colortext">{{ household.street }}</span>
-              </accordion-heading class="houselisting">
-              <p>{{ household.city }}, {{ household.state }} </p>
-              <div class="accordian-footer">
-              </div>
-            </accordion-group>
-          </accordion>
+            <accordion close-others="false" class="col-xs-6 col-md-4" ng-repeat="household in profileCtrl.dictator.owned_households">
+              <accordion-group  class="panel" is-open="proles.open" ng-repeat="resident in household.residents">
+                <accordion-heading class="houselisting" >
+                  <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': proles.open, 'glyphicon-chevron-right': !proles.open}"></i>
+                  <span>{{ resident.first_name + " " + resident.last_name | name }}</span>
+                </accordion-heading>
+                <p>Espionage Loyalty: {{ resident.espionage_loyalty }}</p>
+                <p>Alias: {{ resident.alias }}</p>
+                <p>Age: {{ resident.age | agefix }}</p>
+                <p>E-Mail: {{ resident.email }}</p>
+                <div class="accordian-footer">
+                </div>
+              </accordion-group>
+            </accordion>
         </div>
       </div>
     </div>
