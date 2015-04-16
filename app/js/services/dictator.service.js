@@ -1,11 +1,10 @@
-(function(){
+(function() {
 
-	angular
-		.module('dictatorTinder')
-		.factory('DictatorService', DictatorService);
+  angular
+    .module('dictatorTinder')
+    .factory('DictatorService', DictatorService);
 
-		function DictatorService($resource){
-	    	return $resource('demo-data.json');
-	    }
+  function DictatorService($resource) {
+    return $resource('demo-data.json');
+  }
 })();
-	  

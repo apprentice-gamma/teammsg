@@ -5,11 +5,9 @@
     $routeProvider.
       when('/', {
         templateUrl: 'partials/dictator-list.html'
-        //controller: 'dictatorListCtrl'
       }).
       when('/:dictatorId', {
         templateUrl: 'partials/dictator-profile.html'
-        //controller: 'dictatorProfileCtrl'
       });
   }]);
 })();
