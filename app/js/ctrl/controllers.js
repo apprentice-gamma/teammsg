@@ -7,8 +7,12 @@
     self.dictators = DictatorService.query();
   }]);
 
-  dictatorControllers.controller('dictatorProfileCtrl', ['$http', '$routeParams', function($http, $routeParams) {
+  dictatorControllers.controller('dictatorProfileCtrl', ['DictatorService', '$routeParams', function(DictatorService, $routeParams) {
     var self = this;
+
+    console.log($routeParams.dictatorId);
+
+    self.dictator = DictatorService.get({id: $routeParams.dictatorId});
 
     self.bios = [
       "I enjoy long walks on the beach, playing the zither, and oppressing the common people. Message me if you want to get together and plot a coup, if you know what I mean.",
