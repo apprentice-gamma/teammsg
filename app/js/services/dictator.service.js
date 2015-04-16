@@ -1,10 +1,8 @@
 (function() {
-
-  angular
-    .module('dictatorTinder')
-    .factory('DictatorService', DictatorService);
-
-  function DictatorService($resource) {
-    return $resource('demo-data.json');
-  }
+  var dictatorServices = angular.module('dictatorServices', ['ngResource']);
+  
+  dictatorServices.factory('DictatorService', ['$resource', 
+    function ($resource) {
+      return $resource('demo-data.json');
+  }]);
 })();

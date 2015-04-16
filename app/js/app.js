@@ -1,5 +1,11 @@
 (function() {
-  var app = angular.module('dictatorTinder', ['ngRoute', 'ngResource', 'ui.bootstrap']);
+  var app = angular.module('dictatorTinder', [
+    'ngRoute', 
+    'ngResource', 
+    'ui.bootstrap',
+    'dictatorControllers',
+    'dictatorServices'
+  ]);
 
   app.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
