@@ -23,7 +23,7 @@
         <div class="col-xs-12 col-md-8 left-align shortbio" contenteditable="false" style="">
             <div class="panel panel-info">
                 <div class="panel-heading profileheadings">Bourgeois Bio:</div>
-                <div class="panel-body" ng-controller="dictatorProfileCtrl as profile">Facial hair: {{profileCtrl.dictator.facial_hair}}
+                <div class="panel-body" ng-controller="dictatorProfileCtrl as profile">Facial hair: {{profileCtrl.dictator.facial_hair | facialHair}}
                     <br />    
                     At war with your heart: {{ profileCtrl.dictator.at_war | checkmark}} 
                     <br />About me: {{ profile.randomBio }}</div>
@@ -43,9 +43,9 @@
             <accordion-group  class="panel" is-open="household.open">
               <accordion-heading class="houselisting">
                 <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
-                <span class="colortext">{{ household.street }}</span>
+                <span class="colortext">{{ household.street | address }}</span>
               </accordion-heading class="houselisting">
-              <p>{{ household.city }}, {{ household.state }} </p>
+              <p>{{ household.city | city }}, {{ household.state | state}} </p>
               <div class="accordian-footer">
               
               </div>
@@ -55,7 +55,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>s
 
 <div class="container" contenteditable="false">
   <div class="row">
@@ -69,10 +69,10 @@
                   <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': proles.open, 'glyphicon-chevron-right': !proles.open}"></i>
                   <span>{{ resident.first_name + " " + resident.last_name | name }}</span>
                 </accordion-heading>
-                <p>Espionage Loyalty: {{ resident.espionage_loyalty }}</p>
+                <p>Espionage Loyalty: {{ resident.espionage_loyalty | espionage}}</p>
                 <p>Alias: {{ resident.alias }}</p>
                 <p>Age: {{ resident.age | agefix }}</p>
-                <p>E-Mail: {{ resident.email }}</p>
+                <p>E-Mail: {{ resident.email | email}}</p>
                 <div class="accordian-footer">
                 </div>
               </accordion-group>
