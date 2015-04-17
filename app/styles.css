@@ -43,7 +43,6 @@ div>panel-heading.profileheadings{
 a{
 	color: black;
 	font-family: 'Lobster', cursive;
-
 }
 
 a:hover{
@@ -60,17 +59,21 @@ a:hover{
 	margin-right: auto
 }
 
-#dictatornamelisting:hover{
-	color: red;
+/*overall div element for each dictator on listing page  */
+.thumbnail{
+	border-color: #AED3E5;
 }
 
-#dictatornamelisting{
-	font-family: 'Lobster', cursive;
-}
-
-.panel-info > .panel-heading {  /*  bio headings on profile page   */
+/*  bio headings on profile page   */
+.panel-info > .panel-heading {  
   font-family: 'Lobster', cursive;
   color: black;
   font-size: 150%;
+}
+
+#dictatorlistingbio{
+	text-align: center;
+	font-family: cursive;
+	font-size: 110%
 }
 
