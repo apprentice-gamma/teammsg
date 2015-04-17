@@ -12,6 +12,19 @@
     self.dictator = DictatorService.get({id: $routeParams.dictatorId});
     self.randomBio = Bios[Math.floor(Math.random() * Bios.length)];
     self.randomNum = Math.floor(Math.random() * 22) + 1;
+    self.totalProles = function(){
+      var count = 0;
+      for (i=0; i < self.dictator.owned_households.length; i++)
+        count += self.dictator.owned_households[i].residents.length;
+      
+      return count;
+    }
+    self.totalIncome = function(){
+      var count = 0;
+      for (i=0; i < self.dictator.owned_households.length; i++)
+        count += self.dictator.owned_households[i].household_income;
+      return count;
+    }
   }]);
 
   dictatorControllers.controller('modalCtrl', ['$scope', function($scope) {
