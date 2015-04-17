@@ -11,6 +11,7 @@ Features
 - Match with as many dictators as you like, risk-free as long as you can avoid their secret police.  
 - Each of our dictators are protected by unique code names -- but trust us, all of their photos are 100% real, comrade.  
 
+About
 =========================
 
 eBourgeoisie is a week-long educational project brought to you by Team MSG (Mariah, Sean, and Greg) and the Detroit Labs Apprenticeship Program.  
