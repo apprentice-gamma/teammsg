@@ -11,18 +11,17 @@ div.accordion .panel-default>.panel-heading {
 	background-color: #E6F1F7;
 	font: #567C8F;
 	font-family: 'Lobster', cursive;
+
 }
 
 div>panel-heading.profileheadings{
 	font-family: 'Lobster', cursive;
+	font-weight: bold;
 }
 
-accordion-heading{
-	font-size: 80%;
-}
 
 .profileheadings{
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold;
 }
 
@@ -42,11 +41,14 @@ accordion-heading{
 
 
 a{
-	color: red;
+	color: black;
+	font-family: 'Lobster', cursive;
+
 }
 
 a:hover{
 	text-decoration: none;
+	color: black;
 }
 
 .dictatorname{
@@ -66,8 +68,9 @@ a:hover{
 	font-family: 'Lobster', cursive;
 }
 
-.panel-info > .panel-heading {
+.panel-info > .panel-heading {  /*  bio headings on profile page   */
   font-family: 'Lobster', cursive;
   color: black;
-  font-size: 140%;
+  font-size: 150%;
 }
+
