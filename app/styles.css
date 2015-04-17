@@ -10,14 +10,18 @@ div.accordion .panel-default>.panel-heading {
 	border-color: ;
 	background-color: #E6F1F7;
 	font: #567C8F;
+	font-family: 'Lobster', cursive;
+
 }
 
-accordion-heading{
-	font-size: 80%;
+div>panel-heading.profileheadings{
+	font-family: 'Lobster', cursive;
+	font-weight: bold;
 }
+
 
 .profileheadings{
-	font-size: 130%;
+	font-size: 140%;
 	font-weight: bold;
 }
 
@@ -37,11 +41,13 @@ accordion-heading{
 
 
 a{
-	color: red;
+	color: black;
+	font-family: 'Lobster', cursive;
 }
 
 a:hover{
 	text-decoration: none;
+	color: black;
 }
 
 .dictatorname{
@@ -53,7 +59,26 @@ a:hover{
 	margin-right: auto
 }
 
-#dictatornamelisting:hover{
-	color: red;
+/*overall div element for each dictator on listing page  */
+.thumbnail{
+	border-color: #AED3E5;
+}
+
+.thumbnail:hover{
+	background-color: #E6F1F7;
+
+}
+
+/*  bio headings on profile page   */
+.panel-info > .panel-heading {  
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 150%;
+}
+
+#dictatorlistingbio{
+	text-align: center;
+	font-family: cursive;
+	font-size: 110%
 }
 

@@ -14,7 +14,7 @@
 
 <div class="container target topbio">
     <div class="row">
-        <div class="col-xs-18 col-md-4 col-centered dictatorname">
+        <div class="col-xs-18 col-md-4 col-centered dictatorname ">
              <h1>{{ profileCtrl.dictator.dictator_name | name }}</h1>
           <div class="smalluserpic col-centered"><img title="profile image" class="img-rounded img-responsive" src="img/{{ profileCtrl.randomNum }}.jpg">
 
@@ -36,7 +36,7 @@
 <div class="container" contenteditable="false">
   <div class="row">
     <div class="panel panel-info target">
-      <div class="panel-heading profileheadings col-md-12" contenteditable="false">These are the many houses under my control.</div>
+      <div class="panel-heading profileheadings col-md-12" contenteditable="false">These are the many holds under my control.</div>
       <div class="panel-body"><br/>
         <div class="row accordion">
           <accordion close-others="false" class="col-xs-6 col-md-4" ng-repeat="household in profileCtrl.dictator.owned_households">
@@ -55,7 +55,7 @@
       </div>
     </div>
   </div>
-</div>s
+</div>
 
 <div class="container" contenteditable="false">
   <div class="row">
