@@ -69,10 +69,10 @@
                   <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': proles.open, 'glyphicon-chevron-right': !proles.open}"></i>
                   <span>{{ resident.first_name + " " + resident.last_name | name }}</span>
                 </accordion-heading>
-                <p>Espionage Loyalty: {{ resident.espionage_loyalty }}</p>
+                <p>Espionage Loyalty: {{ resident.espionage_loyalty | espionage}}</p>
                 <p>Alias: {{ resident.alias }}</p>
                 <p>Age: {{ resident.age | agefix }}</p>
-                <p>E-Mail: {{ resident.email }}</p>
+                <p>E-Mail: {{ resident.email | email}}</p>
                 <div class="accordian-footer">
                 </div>
               </accordion-group>

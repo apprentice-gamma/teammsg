@@ -81,4 +81,28 @@
     };
   });
 
+  dictatorFilters.filter('espionage', function(){
+    return function(input) {
+      var testInput = input.toString();
+      var pattern = /^[A-Za-z\s]+$/
+      var letters = pattern.test(testInput);
+      if(letters){
+        return input;
+      } else
+        return "Canada";
+    };
+  });
+
+  dictatorFilters.filter('email', function(){
+    return function(input) {
+      var testInput = input.toString();
+      var pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+      var letters = pattern.test(testInput);
+      if(letters){
+        return input;
+      } else
+        return "fakeemail@gmail.com";
+    };
+  });
+
 })();
