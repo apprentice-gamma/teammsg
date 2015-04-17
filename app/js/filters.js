@@ -53,4 +53,32 @@
     };
   });
 
+  dictatorFilters.filter('city', function(){
+    return function(input) {
+      input = input.toString();
+      var pattern = /^[A-Za-z\s]+$/
+      var letters = pattern.test(input);
+      if(input === "undefined"){
+        return "Detroit";
+      } else if(letters){
+        return input;
+      } else
+        return "Detroit";
+    };
+  });
+
+  dictatorFilters.filter('state', function(){
+    return function(input) {
+      var testInput = input.toString();
+      var pattern = /^[A-Za-z\s]+$/
+      var letters = pattern.test(testInput);
+      if(input.length !== 2){
+        return "HI";
+      } else if(letters){
+        return input;
+      } else
+        return "HI";
+    };
+  });
+
 })();

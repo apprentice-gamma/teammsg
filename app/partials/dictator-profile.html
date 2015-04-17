@@ -45,7 +45,7 @@
                 <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': household.open, 'glyphicon-chevron-right': !household.open}"></i>
                 <span class="colortext">{{ household.street | address }}</span>
               </accordion-heading class="houselisting">
-              <p>{{ household.city }}, {{ household.state }} </p>
+              <p>{{ household.city | city }}, {{ household.state | state}} </p>
               <div class="accordian-footer">
               
               </div>
@@ -55,7 +55,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>s
 
 <div class="container" contenteditable="false">
   <div class="row">
