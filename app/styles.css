@@ -76,6 +76,15 @@ a:hover{
   font-size: 150%;
 }
 
+/*  bio bodies on profile page   */
+.panel-info > .panel-body{
+	font-family: cursive;
+} 
+
+.panel-info > .panel-body.biobody{
+	font-size: 120%;
+} 
+
 #dictatorlistingbio{
 	text-align: center;
 	font-family: cursive;
