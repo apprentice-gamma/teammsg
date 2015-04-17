@@ -27,12 +27,12 @@
  -moz-transform: translate(-50%, -50%);
  -ms-transform: translate(-50%, -50%);
  -o-transform: translate(-50%, -50%);
- background-color: #fff;
- box-shadow: 4px 4px 80px #000;
- -webkit-box-shadow: 4px 4px 80px #000;
- -moz-box-shadow: 4px 4px 80px #000;
- -ms-box-shadow: 4px 4px 80px #000;
- -o-box-shadow: 4px 4px 80px #000;
+ background-color: #E6F1F7;
+ box-shadow: 4px 4px 80px grey;
+ -webkit-box-shadow: 4px 4px 80px grey;
+ -moz-box-shadow: 4px 4px 80px grey;
+ -ms-box-shadow: 4px 4px 80px grey;
+ -o-box-shadow: 4px 4px 80px grey;
  padding: 50px;
 }
 .ng-modal-dialog-content {
