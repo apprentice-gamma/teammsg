@@ -16,7 +16,7 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="row">
-				<div class="col-xs-6 col-md-4" ng-repeat="dictator in listCtrl.dictators" ng-hide="clicked">
+				<div class="col-xs-6 col-md-4" ng-repeat="dictator in listCtrl.dictators | filter:{owned_households: []}" ng-hide="clicked">
 					<a id="dictatornamelisting" href="#/{{dictator['_id']}}"><div class="thumbnail" ng-style="listingStyle" ng-mouseover="listingStyle={'background-color':'#D3D3D3'}"  ng-mouseleave="listingStyle={'background-color':'white'}">
 						<img alt="300x200" src="img/{{$index + 1}}.jpg" />
 						<div class="caption">
