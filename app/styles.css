@@ -94,3 +94,10 @@ a:hover{
 	padding-top: 5%;
 }
 
+li>input{
+	border-color: #AED3E5;
+	border-radius: 5px;
+	font-family: cursive;
+	color: #E6F1F7;
+}
+
