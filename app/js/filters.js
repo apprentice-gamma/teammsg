@@ -39,4 +39,18 @@
         return "beard";
     };
   });
+
+  dictatorFilters.filter('address', function(){
+    return function(input) {
+      var inputTest = input.substring(0, 2);
+      var pattern = /^[0-9\s]+$/
+      var numbers = pattern.test(inputTest);
+      if (numbers){
+        return input;
+      }
+      else
+        return "Area 51";
+    };
+  });
+
 })();
