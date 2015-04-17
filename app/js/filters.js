@@ -25,4 +25,18 @@
   			return "Jason";
   	};
   });
+
+  dictatorFilters.filter('facialHair', function(){
+    return function(input) {
+      input = input.toString();
+      var pattern = /^[A-Za-z\s]+$/
+      var letters = pattern.test(input);
+      if(input.length < 4){
+        return "mustache";
+      } else if (letters){
+        return input;
+      } else
+        return "beard";
+    };
+  });
 })();
