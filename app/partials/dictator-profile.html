@@ -25,9 +25,9 @@
                 <div class="panel-heading profileheadings">Bourgeois Bio:</div>
                 <div class="panel-body" ng-controller="dictatorProfileCtrl as profile">Facial hair: {{profileCtrl.dictator.facial_hair | facialHair}}
                     <br />    
-                    At war with your heart: {{ profileCtrl.dictator.at_war | checkmark}} 
-                    <br />Total proles I control: {{ profileCtrl.totalProles}} 
-                    <br />Total income: {{ profileCtrl.totalIncome | currency}} 
+                    At war with your heart: {{profileCtrl.dictator.at_war | checkmark}} 
+                    <br />Total proles I control: {{profileCtrl.totalProles()}} 
+                    <br />Total income: {{profileCtrl.totalIncome() | currency}} 
 
                     <br />About me: {{ profile.randomBio }}</div>
             </div>
