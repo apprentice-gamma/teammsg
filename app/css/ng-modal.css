@@ -29,11 +29,11 @@
  -ms-transform: translate(-45%, -45%);
  -o-transform: translate(-45%, -45%);
  background-color: #E6F1F7;
- box-shadow: 4px 4px 80px grey;
- -webkit-box-shadow: 4px 4px 80px grey;
- -moz-box-shadow: 4px 4px 80px grey;
- -ms-box-shadow: 4px 4px 80px grey;
- -o-box-shadow: 4px 4px 80px grey;
+ box-shadow: 4px 4px 80px #AED3E5;
+ -webkit-box-shadow: 4px 4px 80px #AED3E5 ;
+ -moz-box-shadow: 4px 4px 80px #AED3E5 ;
+ -ms-box-shadow: 4px 4px 80px #AED3E5 ;
+ -o-box-shadow: 4px 4px 80px #AED3E5 ;
  padding: 50px;
  border-radius: 25px;
 }
