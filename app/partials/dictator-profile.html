@@ -26,7 +26,10 @@
                 <div class="panel-body biobody" ng-controller="dictatorProfileCtrl as profile">Facial hair: {{profileCtrl.dictator.facial_hair | facialHair}}
                     <br />    
                     At war with your heart: {{ profileCtrl.dictator.at_war | checkmark}} 
-                    <br /><br />About me: {{ profile.randomBio }}</div>
+                    <br />Total proles I control: {{profileCtrl.totalProles()}} 
+                    <br />Total income: {{profileCtrl.totalIncome() | currency}} 
+                    <br />
+                    <br />About me: {{ profile.randomBio }}</div>
             </div>
         </div>
     </div>
