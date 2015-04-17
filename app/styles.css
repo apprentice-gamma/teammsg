@@ -64,6 +64,11 @@ a:hover{
 	border-color: #AED3E5;
 }
 
+.thumbnail:hover{
+	background-color: #E6F1F7;
+
+}
+
 /*  bio headings on profile page   */
 .panel-info > .panel-heading {  
   font-family: 'Lobster', cursive;
