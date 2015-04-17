@@ -7,16 +7,20 @@
 				<li>
 					<a href="#/"><img class ="logo" src="img/ebourgeoisielogo.png" /></a>
 				</li>
+				<li>
+					<input type="text" class="pull-right" placeholder="Search" data-ng-model="search.dictator_name">
+				</li>
 			</ul>
 		</div>
 	</div>
 </div>
 
 <div class="container" >
+	
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="row">
-				<div class="col-xs-6 col-md-4" ng-repeat="dictator in listCtrl.dictators | filter:{owned_households: []}" ng-hide="clicked">
+				<div class="col-xs-6 col-md-4" ng-repeat="dictator in listCtrl.dictators | filter:{owned_households: []} | filter: search" ng-hide="clicked">
 					<a id="dictatornamelisting" href="#/{{dictator['_id']}}"><div class="thumbnail">
 						<img alt="300x200" src="img/{{$index + 1}}.jpg" />
 						<div class="caption">
