@@ -10,6 +10,11 @@ div.accordion .panel-default>.panel-heading {
 	border-color: ;
 	background-color: #E6F1F7;
 	font: #567C8F;
+	font-family: 'Lobster', cursive;
+}
+
+div>panel-heading.profileheadings{
+	font-family: 'Lobster', cursive;
 }
 
 accordion-heading{
@@ -57,3 +62,12 @@ a:hover{
 	color: red;
 }
 
+#dictatornamelisting{
+	font-family: 'Lobster', cursive;
+}
+
+.panel-info > .panel-heading {
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 140%;
+}
